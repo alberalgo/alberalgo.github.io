@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <title>ConoceMadrid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lugares de interés que debe visitar antes de irse de Madrid" />
+    <meta name="keywords" content="Madrid, Lugares, Interes, Actividad">
+    <meta name="author" content="Alberto, Jaime, Ramon y Roberto" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lugares.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        .check {
+            opacity: 0.3;
+            color: #0041cc;
+        }
+    </style>
+    <!-- start top_js_button -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1200);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="header_bg">
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/madrid-logo.png" alt="Logo de la Madrid" height="50px" /> </a>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://es-es.facebook.com/ComunidadMadrid/" target="_blank" aria-label="Facebook">
+                                <div style="display: none">Facebook</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/comunidadmadrid?lang=es" target="_blank" aria-label="Twitter">
+                                <div style="display: none">Twitter</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- start header -->
+    <div class="header_btm">
+        <div class="wrap">
+            <div class="header_sub">
+                <div class="h_menu">
+                    <ul>
+                        <li><a accesskey="1" href="index.html">Inicio</a></li>
+                        <li><a accesskey="2" href="lugares.html">Lugares de interés</a></li>
+                        <li><a accesskey="3" href="dondecomer.html">Dónde comer</a></li>
+                        <li><a accesskey="4" href="actividades.html">Actividades</a></li>
+                        <li class="active"><a accesskey="5" href="postal.html">Enviar Postal</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a accesskey="1" href="index.html">Inicio</a></li>
+                        <li><a accesskey="2" href="lugares.html">Lugares de interés</a></li>
+                        <li><a accesskey="3" href="dondecomer.html">Dónde comer</a></li>
+                        <li><a accesskey="4" href="actividades.html">Actividades</a></li>
+                        <li class="active"><a accesskey="5" href="postal.html">Enviar Postal</a></li>
+                    </ul>
+                </div>
+                <div class="sub-head">
+                    <ul> <a href="#" id="menu">Menu</a> </ul>
+                    <div class="clear"></div>
+                </div>
+                <script type="text/javascript">
+                    $(".menu,.search").hide();
+                    $("#menu").click(function () {
+                        $(".menu").toggle();
+                        $(".search").hide();
+                        $("#search").removeClass("active");
+                        $("#menu").toggleClass("active");
+                    });
+                    $("#search").click(function () {
+                        $(".search").toggle();
+                        $(".menu").hide();
+                        $("#menu").removeClass("active");
+                        $("#search").toggleClass("active");
+                        $(".text").focus();
+                    });
+                </script>
+                <script type="text/javascript" src="js/script.js"></script>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- start top_bg -->
+    <div class="top_bg">
+        <div class="wrap">
+            <div class="top">
+                <h1>Enviar Postal</h1> </div>
+        </div>
+    </div>
+    <!-- start main -->
+    <div class="wrap">
+        <div class="main">
+            <div class="contact">
+                <div class="contact-form">
+                    <form method="post" action="index.html">
+                        <label for="nombre">Nombre</label>
+                        <br>
+                        <input id="nombre" type="text" name="textfield" />
+                        <br>
+                        <label for="email">Correo</label>
+                        <br>
+                        <input id="email" type="text" name="textfield" />
+                        <br>
+                        <label for="mensaje">Mensaje</label>
+                        <br>
+                        <input id="mensaje" type="text" name="textfield" />
+                        <br>
+                        <div class="form-group">
+                            <div class="col-md-3">
+                                <label for="Toledo" class="btn btn-primary"><img src="images/postal1.jpg" alt="Toledo" class="img-thumbnail img-check"></label>
+<!--                                <input id="Toledo" type="checkbox" name="chk1" id="item4" value="val1" class="hidden" autocomplete="off">-->
+                            </div>
+                            <div class="col-md-3">
+                                <label for="PlazaMayor" class="btn btn-primary"><img src="images/postal2.jpg" alt="Plaza Mayor" class="img-thumbnail img-check"></label>
+<!--                                <input id="PlazaMayor" type="checkbox" name="chk2" id="item4" value="val2" class="hidden" autocomplete="off">-->
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Catedral" class="btn btn-primary"><img src="images/postal3.jpg" alt="Catedral de la Almudena" class="img-thumbnail img-check">
+<!--                                    <input id="Catedral" type="checkbox" name="chk3" id="item4" value="val3" class="hidden" autocomplete="off"> --> </label>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Alcalá" class="btn btn-primary"><img src="images/postal4.jpg" alt="Puerta Alcalá" class="img-thumbnail img-check">
+                                    <!-- <input id="Alcalá" type="checkbox" name="chk4" id="item4" value="val4" class="hidden" autocomplete="off">--> </label>
+                            </div>
+                        </div>
+                        <br>
+                        <div> <span><input type="submit" alt="Enviar formulario" value="Enviar"></span> </div>
+                    </form>
+                </div>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- start footer -->
+    <div class="footer_bg1">
+        <div class="wrap">
+            <div class="footer1">
+                <!-- scroll_top_btn -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        var defaults = {
+                            containerID: 'toTop', // fading element id
+                            containerHoverID: 'toTopHover', // fading element hover id
+                            scrollSpeed: 1200
+                            , easingType: 'linear'
+                        };
+                        $().UItoTop({
+                            easingType: 'easeOutQuart'
+                        });
+                    });
+                </script> <a href="#" id="toTop" style="display: block;" aria-label="Volver al principio"><span id="toTopHover" style="opacity: 1;"><div style="display: none">Volver al principio</div></span></a>
+                <!--end scroll_top_btn -->
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://es-es.facebook.com/ComunidadMadrid/" target="_blank" aria-label="Facebook">
+                                <div style="display: none">Facebook</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/comunidadmadrid?lang=es" target="_blank" aria-label="Twitter">
+                                <div style="display: none">Twitter</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p class="link"><span>&copy; 2017 Práctica Accesibilidad | Multimedia | Diseñado por: Alberto Álvarez, Jaime Álvarez, Roberto Pérez, Ramón Serrano</span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $(".img-check").click(function () {
+                $(this).toggleClass("check");
+            });
+        });
+    </script>
+</body>
+
+</html>
